@@ -187,22 +187,23 @@
     }
 
     /* Hero box */
-    .hero-inner {
-      position: absolute;
-      top: 52%;
-      left: 9%;
-      transform: translateY(-50%);
-      max-width: 640px;
-      padding: 2.8rem 2.6rem;
-      background: rgba(255, 255, 255, 0.22);
-      backdrop-filter: blur(2px) saturate(120%);
-      border-radius: 20px;
-      box-shadow: 0 6px 40px rgba(0, 0, 0, 0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 1.8rem;
-      z-index: 2;
-    }
+.hero-inner {
+  position: absolute;
+  top: 50%;               /* ← 52% → 55% に変更 */
+  left: 9%;
+  transform: translateY(-45%); /* ← -50% → -45% に変更 */
+  max-width: 640px;
+  padding: 2.8rem 2.6rem;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(2px) saturate(120%);
+  border-radius: 20px;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  z-index: 2;
+}
+
 
     .hero h1 {
       font-family: "Shippori Mincho B1", serif;
@@ -569,13 +570,23 @@
             rgba(255, 255, 255, 0.1) 100%
           );
       }
+.hero-inner {
+  position: absolute;
+  top: 45%;               /* ← 52% → 55% に変更 */
+  left: 7%;
+  transform: translateY(-45%); /* ← -50% → -45% に変更 */
+  max-width: 640px;
+  padding: 2.8rem 2.6rem;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(2px) saturate(120%);
+  border-radius: 20px;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  z-index: 2;
+}
 
-      .hero-inner {
-        background: rgba(255, 255, 255, 0.3);
-        padding: 2rem 1.6rem;
-        max-width: 85%;
-        margin-bottom: -10%;
-      }
 
       .hero h1 {
         font-size: clamp(1.6rem, 1.8rem + 1vw, 2.3rem);
@@ -587,11 +598,12 @@
         padding: 70px 0;
       }
     }
-    @media (max-width: 899px) {
+@media (max-width: 899px) {
   .hero img.bg {
-    object-position: 70% center; /* ← スマホだけ左寄せ */
+    object-position: 74% center; /* ← 70% → 76% */
   }
 }
+
 
 /* モバイルメニュー ✕ ボタン */
 .menu-close {
@@ -619,3 +631,6 @@
       color: var(--sub);
       font-size: .9rem;
     }
+    .section-photo.sea-photo {
+  margin-top: 80px; /* 60px → 80px で呼吸させる */
+}
