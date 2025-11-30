@@ -382,6 +382,105 @@
       background: #fff;
       font-size: 1rem;
     }
+/* ===============================
+   🌺 FINE Okinawa — CONTACT 高級最適化
+================================ */
+
+/* Contact セクション背景（柔らかい光） */
+
+
+/* Gmail ボタン */
+.contact-card .btn.primary {
+  width: 100%;
+  font-size: 1.05rem;
+  padding: 1rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg,
+    var(--mint) 0%,
+    #a7e1cc 100%
+  );
+  color: #1d4033;
+  font-weight: 600;
+  box-shadow:
+    0 8px 24px rgba(110, 180, 150, 0.25),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* 仕切り線 */
+.contact-divider {
+  text-align: center;
+  margin: 2.4rem 0 1.9rem;
+  color: var(--sub);
+  opacity: 0.8;
+  font-size: .95rem;
+}
+
+/* 電話・LINE */
+.contact-links a.btn {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 14px;
+  padding: .9rem;
+  font-size: 1.05rem;
+  border-radius: 999px;
+}
+
+/* LINE ボタン（上質ミント） */
+.contact-links .btn.primary {
+  background: linear-gradient(180deg,
+    #bfeada 0%,
+    #a8dfcc 100%
+  );
+  color: #1c3e31;
+}
+
+/* 電話ボタン */
+.contact-links .btn {
+  background: #ffffff;
+  border: 1px solid rgba(191, 234, 218, 0.65);
+  color: #2a4c40;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* メール説明文 */
+.contact p {
+  font-size: 1.05rem;
+  color: var(--sub);
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+/* ===============================
+   📱 スマホ最適化
+================================ */
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 90px 0 100px;
+  }
+
+  .contact-card {
+    padding: 32px 24px;
+    border-radius: 18px;
+  }
+
+  .contact-title {
+    font-size: 1.4rem;
+  }
+
+  .contact p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .contact-links a.btn {
+    font-size: 1rem;
+    padding: .85rem;
+  }
+}
 
     /* Epilogue */
     .epilogue {
