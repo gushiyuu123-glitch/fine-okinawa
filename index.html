@@ -2,303 +2,379 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- ========================= -->
-    <!--          SEO             -->
-    <!-- ========================= -->
-    <title>FINE — Okinawa Edition｜40代からの穏やかな出会い</title>
+    <!-- =========================
+         基本情報 / SEO 基本
+    ========================== -->
+    <title>FINE Okinawa｜40代からの結婚相談・お見合いパーティー（沖縄・浦添）</title>
     <meta name="description"
-      content="FINE（ファイン）Okinawa Editionは、40代以降の大人の出会いをサポートするお見合い＆少人数パーティーサービス。沖縄の光と海のように穏やかなご縁を結びます。" />
+      content="FINE（ファイン）Okinawa Editionは、40代以降の大人のための結婚相談・お見合い・少人数婚活パーティーを行う沖縄・浦添の出会いサロンです。落ち着いた雰囲気で、40代・50代・60代の方が安心して出会える場をご提供します。" />
+    <meta name="keywords"
+      content="沖縄,浦添,結婚相談所,婚活パーティー,お見合い,40代,50代,60代,シニア婚活,再婚,出会い,FINE Okinawa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fine-okinawa.vercel.app/" />
 
-    <!-- ========================= -->
-    <!--          STYLE           -->
-    <!-- ========================= -->
+    <!-- =========================
+         OGP / SNS
+    ========================== -->
+    <meta property="og:title" content="FINE Okinawa｜40代からの結婚相談・お見合いパーティー（沖縄・浦添）" />
+    <meta property="og:description"
+      content="40代からの穏やかな出会いを叶える、沖縄・浦添の結婚相談・お見合いサロン「FINE Okinawa」。少人数制の婚活パーティーと1対1のご紹介で、落ち着いた大人のご縁をつなぎます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fine-okinawa.vercel.app/" />
+    <meta property="og:image" content="https://fine-okinawa.vercel.app/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FINE Okinawa｜40代からの結婚相談・お見合いパーティー（沖縄・浦添）" />
+    <meta name="twitter:description"
+      content="40代からの穏やかな出会いを叶える、沖縄・浦添の結婚相談・お見合いサロン「FINE Okinawa」。少人数制パーティーと1対1のご紹介で、落ち着いたご縁をつなぎます。" />
+    <meta name="twitter:image" content="https://fine-okinawa.vercel.app/ogp.jpg" />
+
+    <!-- =========================
+         構造化データ（JSON-LD）
+    ========================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "FINE Okinawa",
+      "description": "40代からの大人のための結婚相談・お見合い・少人数制婚活パーティーを行う沖縄・浦添の出会いサロン。",
+      "url": "https://fine-okinawa.vercel.app/",
+      "telephone": "+81-70-5411-4864",
+      "areaServed": "沖縄県",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "沖縄県",
+        "addressLocality": "浦添市"
+      },
+      "priceRange": "¥¥",
+      "sameAs": [],
+      "founder": {
+        "@type": "Person",
+        "name": "FINE Okinawa スタッフ"
+      }
+    }
+    </script>
+
+    <!-- =========================
+         Fonts & STYLE
+    ========================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- =========================
+         microCMS Key（暫定）
+         ※ 本番では env 管理推奨
+    ========================== -->
+    <script>
+      window.MICROCMS_KEY = "CTTGWdKsv8X9lGUGSTgzzoDY8L9CFE5Yd0QM";
+    </script>
   </head>
 
   <body>
 
- 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand">
-        <div class="logo">FINE</div>
-        <div class="tag">Marriage & Encounter — Okinawa Edition</div>
-      </div>
-
-      <!-- ハンバーガー制御 -->
-      <input type="checkbox" id="menuToggle" class="menu-toggle">
-
-      <label for="menuToggle" class="menu-btn" aria-label="メニューを開閉">
-        <span></span><span></span><span></span>
-      </label>
-
-      <nav class="main-nav">
-        
-        <a href="#service" onclick="document.getElementById('menuToggle').checked=false">サービス</a>
-        <a href="#events" onclick="document.getElementById('menuToggle').checked=false">パーティー</a>
-        <a href="#story" onclick="document.getElementById('menuToggle').checked=false">理念</a>
-        <a href="#contact" onclick="document.getElementById('menuToggle').checked=false">相談予約</a>
-        
-      </nav>
-
-      <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div>
-      
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="image/hero_okinawa.jpg" class="bg" alt="沖縄の海辺のカフェで穏やかに語り合う大人の男女" width="1600" height="900" decoding="async">
-    <div class="hero-inner">
-      <span class="hero-badge">沖縄の光と風に包まれて</span>
-      <h1>もう一度、人を好きになる場所。</h1>
-      <p class="lead">
-        FINE Okinawaは、海のそばで心を開く、大人のための出会いサロン。<br>
-        穏やかな光の中で、あなたの新しいご縁がはじまります。
-      </p>
-
-      <div class="hero-cta">
-        <a href="#contact" class="btn primary">無料カウンセリングを予約</a>
-        <a href="#events" class="btn">次回パーティーを見る</a>
-      </div>
-    </div>
-  </section>
-
-<!-- SERVICE（実データ完全準拠 & 高級感調整） -->
-<section id="service">
-  <div class="wrap">
-    <h2 class="section-title">FINEのサービス</h2>
-
-    <div class="value-grid">
-
-      <div class="card fade-up">
-        <h3>1対1の紹介</h3>
-        <p>
-          年代・お人柄を考慮しながら、落ち着いた環境でお相手をご紹介します。<br>
-          無理なく、安心してお話しできる空気づくりを大切にしています。
-        </p>
-      </div>
-
-      <div class="card fade-up">
-        <h3>少人数パーティー</h3>
-        <p>
-          40代〜70代の方が参加しやすい、ゆったりとした少人数会を開催しています。<br>
-          前回・前々回は 8対8 前後で、ゆっくり会話できたと好評です。
-        </p>
-      </div>
-
-      <div class="card fade-up">
-        <h3>アフターサポート</h3>
-        <p>
-          出会いの後の不安・ご相談も、スタッフが丁寧にサポート。<br>
-          ペースに合わせて寄り添い、安心して一歩を進める環境をご用意しています。
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- 🎉 パーティー写真（添える感じ） -->
-  <section class="section-photo party-photo">
-    <img src="image/photo_party.png" alt="沖縄の海辺カフェで談笑する40〜60代の男女" width="1200" height="800" loading="lazy" decoding="async">
-  </section>
-<!-- EVENTS（実データ完全準拠） -->
-<section id="events">
-  <div class="wrap">
-    <h2 class="section-title">次回パーティー</h2>
-
-    <div class="event-grid">
-
-      <!-- 40・50代 -->
-      <div class="card fade-up">
-        <h3>40・50代 出会い応援パーティー</h3>
-        <p><strong>12月7日（日）15:00</strong></p>
-        <p>（受付中）</p>
-      </div>
-
-      <!-- 50・60・70代 -->
-      <div class="card fade-up">
-        <h3>50・60・70代 気軽に友達作りパーティー</h3>
-        <p><strong>11月30日（日）15:00</strong></p>
-        <p>（参加受付中）</p>
-      </div>
-
-      <!-- 40・50・60代 複数日 -->
-      <div class="card fade-up">
-        <h3>40・50・60代 ココカラ出会うパーティー</h3>
-        <p><strong>11月23日（日）15:00</strong></p>
-        <p><strong>12月14日（日）15:00</strong></p>
-        <p>（男女受付中）</p>
-      </div>
-
-    </div>
-
-    <!-- 下部案内 -->
-    <div style="margin-top:40px;text-align:center;color:var(--sub)">
-      <p>参加費｜男性 5,000円 ／ 女性 1,000円（ドリンク付き）</p>
-      <p>場所｜浦添ショッピングセンター近く（無料駐車場完備）</p>
-      <p>前回・前々回とも 8対8 前後でゆったり開催</p>
-    </div>
-  </div>
-</section>
-
-  <!-- 🌅 抽象海 写真 -->
-  <section class="section-photo sea-photo">
-    <img src="image/photo_sea.png" alt="沖縄の夕暮れの海の風景" width="1200" height="600" loading="lazy" decoding="async">
-  </section>
-
-  <!-- STORY -->
-  <section id="story">
-    <div class="wrap">
-      <h2 class="section-title">FINEの理念</h2>
-      <div class="card fade-up">
-        <p>
-          FINE Okinawaの原点は、「もう一度、人を好きになる勇気を持ってほしい」という想いです。<br><br>
-          年齢を重ねたからこそ分かる穏やかさ、言葉の重み、そして人の温度。<br>
-          沖縄の光のようにやさしく、あたたかいご縁をつなげていきます。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- VOICE -->
-  <section id="voice">
-    <div class="wrap">
-      <h2 class="section-title">成婚者の声</h2>
-      <div class="voice-grid">
-        <div class="card fade-up">
-          「海辺のパーティーで出会いました。無理に話さなくても、自然に笑顔になれました。」<br>
-          <small>— 50代・女性</small>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <div class="brand">
+          <div class="logo">FINE</div>
+          <div class="tag">Okinawa Marriage & Encounter Salon</div>
         </div>
-        <div class="card fade-up">
-          「気を張らずに話せる雰囲気がありがたかったです。ゆっくりと関係を築けました。」<br>
-          <small>— 40代・男性</small>
-        </div>
-        <div class="card fade-up">
-          「スタッフの方のサポートで、安心して再出発できました。」<br>
-          <small>— 60代・女性</small>
-        </div>
+
+        <!-- ハンバーガー制御 -->
+        <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+        <label for="menuToggle" class="menu-btn" aria-label="メニューを開閉">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          <a href="#service" onclick="document.getElementById('menuToggle').checked=false">サービス</a>
+          <a href="#events" onclick="document.getElementById('menuToggle').checked=false">パーティー</a>
+          <a href="#story" onclick="document.getElementById('menuToggle').checked=false">理念</a>
+          <a href="#contact" onclick="document.getElementById('menuToggle').checked=false">相談予約</a>
+        </nav>
+
+        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div>
       </div>
-    </div>
-  </section>
+    </header>
 
-<!-- PLAN（実データ完全準拠） -->
-<section id="plan">
-  <div class="wrap">
-    <h2 class="section-title">料金について</h2>
-
-    <div class="plan-grid">
-
-      <!-- パーティー参加費 -->
-      <div class="card fade-up">
-        <h4>パーティー参加費</h4>
-        <p><strong>男性：5,000円</strong></p>
-        <p><strong>女性：1,000円</strong></p>
-        <p>（ソフトドリンク・フリードリンク付き）</p>
-        <p>年代別・少人数で安心してご参加いただけます。</p>
-      </div>
-
-      <!-- 1対1紹介 -->
-      <div class="card fade-up">
-        <h4>1対1の紹介</h4>
-        <p>お人柄やご希望をお伺いしながら、お相手をご紹介します。</p>
-        <p>参加希望の方は、お電話・Gmailにてお問い合わせください。</p>
-      </div>
-
-      <!-- 相談・サポート -->
-      <div class="card fade-up">
-        <h4>ご相談サポート</h4>
-        <p>ご不安やご質問は、スタッフが丁寧にサポートいたします。</p>
-        <p>初めての方も、安心してお問い合わせください。</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
- <!-- CONTACT -->
-<section id="contact" class="contact fade-up">
-  <div class="wrap">
-    <h2 class="section-title">まずはお気軽にご相談ください</h2>
-    <p style="text-align:center;color:var(--sub);margin-bottom:2rem;font-size:1.05rem">
-      お見合いやイベント参加について、<br>スタッフが丁寧にご案内いたします。
-    </p>
-
-    <div class="contact-card">
-      <h3 class="contact-title">📧 メールで予約する（Gmailが開きます）</h3>
-
-      <!-- 📩 Gmail 起動ボタン -->
-      <a
-        href="mailto:ar84zwpzna@gmail.com?subject=【FINE予約希望】&body=お名前：%0D%0A年齢：%0D%0A参加希望日：%0D%0Aご連絡方法（メール／電話／LINE）：%0D%0Aその他："
-        class="btn primary"
-        style="width:100%;justify-content:center;margin-bottom:20px;"
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <img
+        src="image/hero_okinawa.jpg"
+        class="bg"
+        alt="沖縄の海辺のカフェで穏やかに語り合う40代・50代の男女"
+        width="1600"
+        height="900"
+        decoding="async"
+        loading="eager"
       >
-        Gmailで応募する
+      <div class="hero-inner">
+        <span class="hero-badge">沖縄の光と風に包まれて</span>
+        <h1>もう一度、人を好きになる場所。</h1>
+        <p class="lead">
+          FINE Okinawaは、沖縄・浦添にある40代からの大人のための出会いサロン。<br>
+          結婚相談・お見合い・少人数制の婚活パーティーを通して、<br>
+          落ち着いた空間で、あなたの新しいご縁をつなぎます。
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn primary">無料カウンセリングを予約</a>
+          <a href="#events" class="btn">次回パーティーを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section id="service">
+      <div class="wrap">
+        <h2 class="section-title">FINEのサービス</h2>
+
+        <div class="value-grid" aria-label="サービス内容一覧">
+
+          <div class="card fade-up">
+            <h3>1対1のご紹介（お見合い）</h3>
+            <p>
+              年代やお人柄、ご希望のイメージを丁寧にお伺いしながら、落ち着いた環境でお相手をご紹介します。<br>
+              プロフィールだけでは分からない「雰囲気」や「大切にしたい価値観」も大事にしています。
+            </p>
+          </div>
+
+          <div class="card fade-up">
+            <h3>少人数制の婚活パーティー</h3>
+            <p>
+              40代〜70代の方が参加しやすい、ゆったりとした少人数のパーティーを開催しています。<br>
+              前回・前々回はいずれも 8対8 前後で、「一人ひとりと落ち着いて話せた」と好評です。
+            </p>
+          </div>
+
+          <div class="card fade-up">
+            <h3>アフターサポート</h3>
+            <p>
+              出会いのあとの不安や迷いも、経験豊富なスタッフがしっかりサポート。<br>
+              交際の進め方やお返事の仕方など、ひとつひとつ一緒に考えながら、安心して前に進めるよう寄り添います。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎉 パーティー写真（添える感じ） -->
+    <section class="section-photo party-photo" aria-label="婚活パーティーの雰囲気">
+      <img
+        src="image/photo_party.png"
+        alt="沖縄の海辺カフェで談笑する40〜60代の男女の婚活パーティーの様子"
+        width="1200"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      >
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+      <div class="wrap">
+        <h2 class="section-title">次回パーティーのご案内</h2>
+
+        <!-- ← microCMS のイベントが挿入される -->
+        <div id="eventGrid" class="event-grid" aria-live="polite"></div>
+
+        <!-- 下部案内 -->
+        <div style="margin-top:40px;text-align:center;color:var(--sub)">
+          <p>参加費｜男性 5,000円 ／ 女性 1,000円（ソフトドリンク付き）</p>
+          <p>開催場所｜浦添ショッピングセンター近く（無料駐車場あり）</p>
+          <p>前回・前々回とも 8対8 前後の少人数で、ゆったりとした雰囲気で開催しています。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌅 抽象海 写真 -->
+    <section class="section-photo sea-photo" aria-label="沖縄の夕暮れの海">
+      <img
+        src="image/photo_sea.png"
+        alt="沖縄の夕暮れの海とやわらかな光の風景"
+        width="1200"
+        height="600"
+        loading="lazy"
+        decoding="async"
+      >
+    </section>
+
+    <!-- STORY -->
+    <section id="story">
+      <div class="wrap">
+        <h2 class="section-title">FINE Okinawaの想い</h2>
+        <div class="card fade-up">
+          <p>
+            FINE Okinawaの原点には、<br>
+            「年齢を重ねても、もう一度人を好きになる喜びを味わってほしい」という想いがあります。<br><br>
+            40代・50代・60代だからこそ分かる、穏やかさや思いやり、言葉の重み。<br>
+            そんな大人の魅力が自然と伝わるよう、人数や空間、会の進め方にも気を配っています。<br><br>
+            沖縄の光のようにあたたかく、海風のように心地よいご縁を。<br>
+            あなたのペースで、一歩ずつ進める場所でありたいと考えています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICE -->
+    <section id="voice">
+      <div class="wrap">
+        <h2 class="section-title">ご成婚・ご利用者さまの声</h2>
+        <div class="voice-grid">
+
+          <div class="card fade-up">
+            「海辺のパーティーで出会いました。緊張していましたが、少人数だったので無理に話さなくても自然と笑顔になれました。」<br>
+            <small>— 50代・女性</small>
+          </div>
+
+          <div class="card fade-up">
+            「同年代が多く、落ち着いた雰囲気で話せたのがよかったです。スタッフの方が間に入ってくれたので、安心して参加できました。」<br>
+            <small>— 40代・男性</small>
+          </div>
+
+          <div class="card fade-up">
+            「一度は結婚を諦めかけていましたが、『ゆっくりで大丈夫ですよ』と言ってもらえたことで、もう一度前を向けました。」<br>
+            <small>— 60代・女性</small>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN -->
+    <section id="plan">
+      <div class="wrap">
+        <h2 class="section-title">料金について</h2>
+
+        <div class="plan-grid">
+
+          <!-- パーティー参加費 -->
+          <div class="card fade-up">
+            <h3>婚活パーティー参加費</h3>
+            <p><strong>男性：5,000円</strong></p>
+            <p><strong>女性：1,000円</strong></p>
+            <p>（ソフトドリンク・フリードリンク付き）</p>
+            <p>
+              40代〜70代の方まで、年代別・少人数制で開催しています。<br>
+              「大人数のパーティーは少し苦手」という方にも参加しやすい雰囲気です。
+            </p>
+          </div>
+
+          <!-- 1対1紹介 -->
+          <div class="card fade-up">
+            <h3>1対1のご紹介（お見合い）</h3>
+            <p>
+              プロフィールやご希望をもとに、お一人ずつ丁寧にお相手をご紹介します。<br>
+              落ち着いた雰囲気の中で、ゆっくりとお話しいただけます。
+            </p>
+            <p>
+              ご希望の方は、まずは無料カウンセリングまたはお電話・Gmailにてお問い合わせください。
+            </p>
+          </div>
+
+          <!-- 相談・サポート -->
+          <div class="card fade-up">
+            <h3>ご相談サポート</h3>
+            <p>
+              「婚活が初めて」「久しぶりの出会いで不安」という方にも、スタッフが丁寧にサポートします。<br>
+              活動のペースやご不安な点など、どんなことでもお気軽にご相談ください。
+            </p>
+            <p>
+              無理な勧誘は一切行っておりませんので、まずはお話を聞くだけでも大歓迎です。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact fade-up">
+      <div class="wrap">
+        <h2 class="section-title">まずはお気軽にご相談ください</h2>
+        <p style="text-align:center;color:var(--sub);margin-bottom:2rem;font-size:1.05rem">
+          「自分の年齢でも大丈夫かな」「どんな雰囲気の会ですか？」など、<br>
+          小さな不安や疑問でもかまいません。スタッフが丁寧にご案内いたします。
+        </p>
+
+        <div class="contact-card">
+          <h3 class="contact-title">📧 メールで予約する（Gmailが開きます）</h3>
+
+          <!-- 📩 Gmail 起動ボタン -->
+          <a
+            href="mailto:ar84zwpzna@gmail.com?subject=【FINE予約希望】&body=お名前：%0D%0A年齢：%0D%0A参加希望日：%0D%0Aご連絡方法（メール／電話／LINE）：%0D%0Aその他："
+            class="btn primary"
+            style="width:100%;justify-content:center;margin-bottom:20px;"
+          >
+            Gmailで応募する
+          </a>
+
+          <div class="contact-divider" style="text-align:center;margin:2rem 0 1.5rem;color:var(--sub);opacity:0.7;font-size:0.95rem;">
+            または
+          </div>
+
+          <div class="contact-links" style="text-align:center;">
+            <p style="margin-bottom:.6rem;color:var(--sub);font-weight:500;">お電話・LINEでもご相談いただけます。</p>
+            <a href="tel:070-5411-4864" class="btn">📞 電話で相談する</a>
+            <a href="https://lin.ee/xxxxx" target="_blank" class="btn primary" rel="noopener noreferrer">💬 LINEで相談する</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPILOGUE -->
+    <section class="epilogue">
+      <p>出会いは、奇跡ではなく、あなたが選ぶ光の一歩。</p>
+    </section>
+
+    <!-- DESIGN LINK -->
+    <div style="
+      text-align:center;
+      padding: 60px 20px 40px;
+      color: #756e66;
+      font-size: .95rem;
+      opacity: .85;
+      line-height: 1.9;
+    ">
+      <p style="margin:0 0 12px; font-family:'Shippori Mincho B1',serif; letter-spacing:.06em;">
+        本サイトのデザイン・制作
+      </p>
+      <a href="https://gushiken-base.vercel.app" target="_blank" rel="noopener noreferrer"
+        style="
+          display:inline-block;
+          padding:10px 22px;
+          border:1px solid #d8d2c8;
+          border-radius:999px;
+          text-decoration:none;
+          color:#524b44;
+          background:rgba(255,255,255,0.6);
+          backdrop-filter:blur(6px);
+          transition:.25s;
+        "
+        onmouseover="this.style.opacity=0.75"
+        onmouseout="this.style.opacity=1"
+      >
+        Gushiken Design（制作相談はこちら）
       </a>
+    </div>
 
-      <div class="contact-divider" style="text-align:center;margin:2rem 0 1.5rem;color:var(--sub);opacity:0.7;font-size:0.95rem;">
-        または
-      </div>
-
-      <div class="contact-links" style="text-align:center;">
-        <p style="margin-bottom:.6rem;color:var(--sub);font-weight:500;">お電話・LINEでもご相談いただけます。</p>
-        <a href="tel:070-5411-4864" class="btn">📞 電話で相談する</a>
-        <a href="https://lin.ee/xxxxx" target="_blank" class="btn primary">💬 LINEで相談する</a>
-      </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="brand-footer">FINE Okinawa</div>
+    <div class="copyright">
+      © 2025 FINE Okinawa — All Rights Reserved.
     </div>
   </div>
-</section>
+</footer>
 
-  <!-- EPILOGUE -->
-  <section class="epilogue">
-    <p>出会いは、奇跡ではなく、光の選択。</p>
-  </section>
-<!-- DESIGN LINK -->
-<div style="
-  text-align:center;
-  padding: 60px 20px 40px;
-  color: #756e66;
-  font-size: .95rem;
-  opacity: .85;
-  line-height: 1.9;
-">
-  <p style="margin:0 0 12px; font-family:'Shippori Mincho B1',serif; letter-spacing:.06em;">
-    本サイトのデザイン・制作
-  </p>
-  <a href="https://gushiken-base.vercel.app" target="_blank"
-    style="
-      display:inline-block;
-      padding:10px 22px;
-      border:1px solid #d8d2c8;
-      border-radius:999px;
-      text-decoration:none;
-      color:#524b44;
-      background:rgba(255,255,255,0.6);
-      backdrop-filter:blur(6px);
-      transition:.25s;
-    "
-    onmouseover="this.style.opacity=0.75"
-    onmouseout="this.style.opacity=1"
-  >
-    Gushiken Design（制作相談はこちら）
-  </a>
-</div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2025 FINE Okinawa — 光と風に包まれた、ご縁の場所。</p>
-  </footer>
-
-
-    <!-- ========================= -->
-    <!--         MAIN JS           -->
-    <!-- ========================= -->
+    <!-- =========================
+         MAIN JS（microCMS / フェードなど）
+    ========================== -->
     <script type="module" src="/src/main.js"></script>
-
   </body>
 </html>
