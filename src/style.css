@@ -915,3 +915,115 @@ section.fade-up:nth-of-type(5) { transition-delay: .30s; }
   transform: none !important;
   filter: none !important;
 }
+/* ============================================
+   📱 FINE Okinawa — SmartPhone Refinement Pack
+   （既存の上書き + 追加のみ）
+============================================ */
+
+/* セクション余白を上品に */
+@media (max-width: 899px) {
+  section {
+    padding: 90px 0 80px;
+  }
+}
+
+/* Hero 内側ボックスをより高級に */
+@media (max-width: 899px) {
+  .hero-inner {
+    padding: 3.2rem 2.8rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(4px) saturate(140%);
+    gap: 2.2rem;
+
+    top: 46%;
+    transform: translateY(-46%);
+    left: 6%;
+    right: 6%;          /* 横幅をスマホで最適化 */
+    max-width: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.55rem, 1.7rem + 1vw, 2.2rem);
+    letter-spacing: .08em;
+    line-height: 1.7;
+  }
+
+  .hero p.lead {
+    font-size: 1.0rem;
+    line-height: 1.95;
+  }
+}
+
+/* ハンバーガーメニューの高級化 */
+@media (max-width: 899px) {
+  header .main-nav {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px) saturate(130%);
+    padding-top: 96px;
+    gap: 28px;
+  }
+
+  header .main-nav a {
+    font-size: 1.18rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+  }
+
+  .menu-btn span {
+    height: 2.3px;
+  }
+}
+
+/* カード（event） — スマホ版の呼吸感最適化 */
+@media (max-width: 899px) {
+  .party-card {
+    border-radius: 22px;
+  }
+
+  .party-card-inner {
+    padding: 28px 28px;
+  }
+
+  .party-title {
+    font-size: 1.22rem;
+    letter-spacing: .12em;
+  }
+
+  .party-date-item {
+    padding: 8px 0;
+  }
+
+  #eventGrid {
+    justify-items: center;
+  }
+}
+
+/* セクションタイトルの高級化 */
+@media (max-width: 899px) {
+  .section-title {
+    font-size: 1.85rem;
+    letter-spacing: .10em;
+    margin-bottom: 46px;
+  }
+
+  .section-title::after {
+    width: 48px;
+  }
+}
+
+/* フッターの読みやすさUP */
+@media (max-width: 899px) {
+  footer.site-footer {
+    padding: 80px 0 70px;
+  }
+
+  footer.site-footer .brand-footer {
+    font-size: 1.22rem;
+    letter-spacing: .16em;
+  }
+
+  footer.site-footer .copyright {
+    font-size: .82rem;
+  }
+}
