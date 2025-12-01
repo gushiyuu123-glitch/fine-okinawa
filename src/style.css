@@ -658,11 +658,15 @@
 
       /* HERO モバイル */
       .hero {
-        height: 110vh;
+        height: 130vh;
         align-items: flex-end;
         padding-bottom: 10vh;
       }
-
+@media (max-width: 768px) {
+  .hero-cta {
+    width: 90%;         /* ← 横幅を広げる */
+  }
+}
       .hero::after {
         background: linear-gradient(
             to right,
