@@ -1129,3 +1129,12 @@ section.fade-up:nth-of-type(5) { transition-delay: .38s; }
     font-size: .82rem;
   }
 }
+.party-desc {
+  margin-top: 16px;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: #5c554e;
+}
+.party-desc p {
+  margin-bottom: 12px;
+}

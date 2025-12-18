@@ -1,6 +1,6 @@
 // =====================================================
 //  FINE Okinawa — microCMS：次回パーティー情報
-//  全部盛り・本番用 完全版
+//  本番用・全部盛り・完全安定版
 // =====================================================
 
 // microCMS 設定
@@ -8,13 +8,13 @@ const SERVICE_ID = "fineokinawa";
 const API_KEY = window.MICROCMS_KEY;
 const ENDPOINT = "events";
 
-// DOM 読み込み完了でスタート
+// DOM 読み込み完了
 document.addEventListener("DOMContentLoaded", () => {
   fetchEvents();
 });
 
 // =====================================================
-// ① fade-up を適用する関数（描画後に実行）
+// fade-up 適用
 // =====================================================
 function applyFadeUp() {
   const io = new IntersectionObserver(
@@ -30,11 +30,11 @@ function applyFadeUp() {
 }
 
 // =====================================================
-// ② ノア最適化：日付フォーマット（大人向けラグジュアリー）
+// 日付フォーマット（高級感演出）
 // =====================================================
 function formatDateJP(dateString) {
   const date = new Date(dateString);
-  if (isNaN(date)) return dateString; // 保険で元の文字列を返す
+  if (isNaN(date)) return dateString;
 
   const youbi = ["日", "月", "火", "水", "木", "金", "土"];
   const y = date.getFullYear();
@@ -44,11 +44,11 @@ function formatDateJP(dateString) {
   const hh = date.getHours().toString().padStart(2, "0");
   const mm = date.getMinutes().toString().padStart(2, "0");
 
-  return `${y}年${m}月${d}日（${w}）${hh}:${mm} 開催`;
+  return `${y}年${m}月${d}日（${w}） ${hh}:${mm} 開催`;
 }
 
 // =====================================================
-// ③ ステータスをバッジにする（受付中 / 満席 / 調整中…）
+// ステータス → バッジ色変換
 // =====================================================
 function renderStatusBadge(statusRaw) {
   const status = statusRaw || "未設定";
@@ -64,7 +64,7 @@ function renderStatusBadge(statusRaw) {
 }
 
 // =====================================================
-// ④ イベント取得
+// microCMS API
 // =====================================================
 async function fetchEvents() {
   const url = `https://${SERVICE_ID}.microcms.io/api/v1/${ENDPOINT}`;
@@ -76,20 +76,19 @@ async function fetchEvents() {
       },
     });
 
-    if (!res.ok) throw new Error("microCMS 接続エラー（status: " + res.status + ")");
+    if (!res.ok) throw new Error("microCMS 接続エラー: " + res.status);
 
     const json = await res.json();
-    console.log("APIレスポンス:", json);
+    console.log("イベントデータ:", json);
 
     if (!json || !Array.isArray(json.contents)) {
-      console.error("microCMS 形式エラー:", json);
       renderEvents([]);
       applyFadeUp();
       return;
     }
 
     renderEvents(json.contents);
-    applyFadeUp(); // 描画後に fade-up 再適用（超重要）
+    applyFadeUp();
 
   } catch (err) {
     console.error("イベント取得エラー:", err);
@@ -99,46 +98,34 @@ async function fetchEvents() {
 }
 
 // =====================================================
-// ⑤ HTML に描画（カードデザイン全部盛り）
+// 描画（本文付き 完全版）
 // =====================================================
 function renderEvents(events) {
   const container = document.getElementById("eventGrid");
   if (!container) return;
-
   container.innerHTML = "";
 
-  // ---- イベント 0 件のとき ----
+  // ---- 0件 ----
   if (!events || events.length === 0) {
     container.innerHTML = `
       <div class="party-card card fade-up party-card--empty">
         <div class="party-card-inner">
           <p class="party-empty-main">現在、公開中のパーティーはありません。</p>
-          <p class="party-empty-sub">次回開催が決まり次第、こちらのページでご案内いたします。</p>
+          <p class="party-empty-sub">次回開催が決まり次第、こちらでご案内いたします。</p>
         </div>
       </div>
     `;
     return;
   }
 
-  // ---- イベントがあるとき ----
+  // ---- イベントあり ----
   events.forEach((ev) => {
     const card = document.createElement("div");
     card.className = "party-card card fade-up";
 
-    // 日付を一旦配列にまとめる
+    // 日付
     const dates = [];
-
-    if (ev.date) {
-      dates.push(ev.date);
-    }
-
-    if (Array.isArray(ev.multipleDates)) {
-      ev.multipleDates.forEach((d) => {
-        if (d?.date) {
-          dates.push(d.date);
-        }
-      });
-    }
+    if (ev.date) dates.push(ev.date);
 
     const dateListHTML =
       dates.length > 0
@@ -158,11 +145,14 @@ function renderEvents(events) {
     `
         : `
       <p class="party-date-empty">
-        <small>開催日調整中です。決まり次第こちらに掲載いたします。</small>
+        <small>開催日調整中です。</small>
       </p>
     `;
 
-    const ages = ev.ages || "指定なし";
+    // 本文（microCMS リッチエディタ）
+    const bodyHTML = ev.body
+      ? `<div class="party-desc">${ev.body}</div>`
+      : "";
 
     card.innerHTML = `
       <div class="party-card-inner">
@@ -173,12 +163,7 @@ function renderEvents(events) {
 
         ${dateListHTML}
 
-        <div class="party-meta">
-          <p class="party-ages">
-            <span>対象年代</span>
-            ${ages}
-          </p>
-        </div>
+        ${bodyHTML}
       </div>
     `;
 
