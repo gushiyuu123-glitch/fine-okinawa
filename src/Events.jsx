@@ -31,48 +31,69 @@ export default function Events() {
       <div className="wrap">
         <h2 className="section-title">次回パーティー</h2>
 
-        <div className="event-grid">
+        <div id="eventGrid">
+          {events.length === 0 && (
+            <div className="party-card party-card--empty fade-up">
+              <div className="party-card-inner">
+                <p className="party-empty-main">現在受付中のイベントはありません</p>
+                <p className="party-empty-sub">次回のお知らせをお待ちください。</p>
+              </div>
+            </div>
+          )}
+
           {events.map((ev) => (
-            <div key={ev.id} className="card fade-up">
-              <h3>{ev.title}</h3>
+            <div key={ev.id} className="party-card fade-up">
+              <div className="party-card-inner">
+                {/* タイトル + ステータス */}
+                <div className="party-card-header">
+                  <h3 className="party-title">{ev.title}</h3>
 
-              {/* ▼ 単発開催日 */}
-              {ev.date && (
-                <p>
-                  <strong>{ev.date}</strong>
-                </p>
-              )}
+                  <span
+                    className={
+                      `status-badge ` +
+                      (ev.status === "受付中"
+                        ? "status-badge--open"
+                        : ev.status === "満席"
+                        ? "status-badge--full"
+                        : "status-badge--pending")
+                    }>
+                    {ev.status}
+                  </span>
+                </div>
 
-              {/* ▼ 複数開催日 */}
-              {ev.multipleDates?.map((d, i) => (
-                <p key={i}>
-                  <strong>{d}</strong>
-                </p>
-              ))}
+                {/* 単発日付 */}
+                {ev.date && (
+                  <ul className="party-date-list">
+                    <li className="party-date-item">
+                      <span className="party-date-icon">🕒</span>
+                      <span className="party-date-text">{ev.date}</span>
+                    </li>
+                  </ul>
+                )}
 
-              {/* ▼ ステータス */}
-              <p>（{ev.status}）</p>
+                {/* 複数日付 */}
+                {ev.multipleDates?.length > 0 && (
+                  <ul className="party-date-list">
+                    {ev.multipleDates.map((d, i) => (
+                      <li key={i} className="party-date-item">
+                        <span className="party-date-icon">🕒</span>
+                        <span className="party-date-text">{d}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
-              {/* ▼ 対象年齢（空なら表示しない） */}
-              {ev.ages && (
-                <p>
-                  <small>対象年代：{ev.ages}</small>
-                </p>
-              )}
+                {/* 年齢 */}
+                {ev.ages && (
+                  <div className="party-meta">
+                    <p className="party-ages">
+                      <span>対象年代</span> {ev.ages}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
-        </div>
-
-        <div
-          style={{
-            marginTop: 40,
-            textAlign: "center",
-            color: "var(--sub)",
-          }}
-        >
-          <p>参加費｜男性 5,000円 ／ 女性 1,000円（ドリンク付き）</p>
-          <p>場所｜浦添ショッピングセンター近く（無料駐車場完備）</p>
-          <p>前回・前々回とも 8対8 前後でゆったり開催</p>
         </div>
       </div>
     </section>
