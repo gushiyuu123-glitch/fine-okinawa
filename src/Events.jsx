@@ -26,12 +26,25 @@ export default function Events() {
     fetchEvents();
   }, []);
 
+  // ---- 日付を日本形式に整える ----
+  const formatDateJP = (raw) => {
+    if (!raw) return "";
+    const d = new Date(raw);
+    if (isNaN(d)) return raw;
+
+    const youbi = ["日","月","火","水","木","金","土"];
+    return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日（${
+      youbi[d.getDay()]
+    }）`;
+  };
+
   return (
     <section id="events">
       <div className="wrap">
         <h2 className="section-title">次回パーティー</h2>
 
         <div id="eventGrid">
+          {/* イベント0件 */}
           {events.length === 0 && (
             <div className="party-card party-card--empty fade-up">
               <div className="party-card-inner">
@@ -41,55 +54,26 @@ export default function Events() {
             </div>
           )}
 
+          {/* イベント一覧 */}
           {events.map((ev) => (
             <div key={ev.id} className="party-card fade-up">
               <div className="party-card-inner">
-                {/* タイトル + ステータス */}
-                <div className="party-card-header">
-                  <h3 className="party-title">{ev.title}</h3>
+                {/* タイトル */}
+                <h3 className="party-title">{ev.title}</h3>
 
-                  <span
-                    className={
-                      `status-badge ` +
-                      (ev.status === "受付中"
-                        ? "status-badge--open"
-                        : ev.status === "満席"
-                        ? "status-badge--full"
-                        : "status-badge--pending")
-                    }>
-                    {ev.status}
-                  </span>
-                </div>
-
-                {/* 単発日付 */}
+                {/* 開催日 */}
                 {ev.date && (
-                  <ul className="party-date-list">
-                    <li className="party-date-item">
-                      <span className="party-date-icon">🕒</span>
-                      <span className="party-date-text">{ev.date}</span>
-                    </li>
-                  </ul>
+                  <p className="party-date">
+                    🕒 {formatDateJP(ev.date)}
+                  </p>
                 )}
 
-                {/* 複数日付 */}
-                {ev.multipleDates?.length > 0 && (
-                  <ul className="party-date-list">
-                    {ev.multipleDates.map((d, i) => (
-                      <li key={i} className="party-date-item">
-                        <span className="party-date-icon">🕒</span>
-                        <span className="party-date-text">{d}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {/* 年齢 */}
-                {ev.ages && (
-                  <div className="party-meta">
-                    <p className="party-ages">
-                      <span>対象年代</span> {ev.ages}
-                    </p>
-                  </div>
+                {/* 本文（HTML） */}
+                {ev.body && (
+                  <div
+                    className="party-body"
+                    dangerouslySetInnerHTML={{ __html: ev.body }}
+                  ></div>
                 )}
               </div>
             </div>
