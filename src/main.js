@@ -2,6 +2,7 @@
 //  FINE Okinawa — microCMS：次回パーティー情報
 //  本番用・全部盛り・完全安定版
 // =====================================================
+import './style.css'
 
 // microCMS 設定
 const SERVICE_ID = "fineokinawa";

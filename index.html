@@ -1,43 +1,32 @@
+<!doctype html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- =========================
-       Google Search Console 所有権確認
-  ========================== -->
-<meta name="google-site-verification" content="Z_GHj1b3Nsabni1x8SftbaIV4pIAfF4wWpOYtjww3vY" />
+  <!-- Google Search Console 所有権確認 -->
+  <meta name="google-site-verification" content="Z_GHj1b3Nsabni1x8SftbaIV4pIAfF4wWpOYtjww3vY" />
 
-  <!-- =========================
-       基本情報（SEO）
-  ========================== -->
+  <!-- 基本情報（SEO） -->
   <title>FINE Okinawa｜40代からの結婚相談・お見合い・婚活（沖縄・浦添）｜少人数婚活パーティー</title>
-
   <meta name="description"
     content="FINE Okinawa（ファイン沖縄）は、沖縄・浦添にある40代からの大人のための結婚相談所・お見合いサロン。少人数制の婚活パーティーと1対1のご紹介で、落ち着いた空間で安心して出会える場をご提供します。" />
-
   <meta name="keywords"
     content="沖縄,浦添,結婚相談所,婚活,婚活パーティー,40代婚活,50代婚活,60代婚活,シニア婚活,沖縄お見合い,浦添婚活,FINE Okinawa" />
-
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.fine-okinawa.com/" />
 
-<!-- =========================
-     Favicon（全デバイス対応）
-========================= -->
-<link rel="icon" href="/image/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/image/favicon_64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/image/favicon_128.png">
-<link rel="icon" type="image/png" sizes="256x256" href="/image/favicon_256.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/image/favicon_512.png">
+  <!-- Favicon（全デバイス対応） -->
+  <link rel="icon" href="/image/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/image/favicon_64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/image/favicon_128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="/image/favicon_256.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/image/favicon_512.png">
+  <link rel="apple-touch-icon" href="/image/favicon_180.png" sizes="180x180">
 
-<!-- iPhone / iPad 専用（Safari アイコン） -->
-<link rel="apple-touch-icon" href="/image/favicon_180.png" sizes="180x180">
-
-  <!-- =========================
-       OGP / SNS
-  ========================== -->
+  <!-- OGP / SNS -->
   <meta property="og:site_name" content="FINE Okinawa">
   <meta property="og:title" content="FINE Okinawa｜40代からの結婚相談・お見合いサロン（沖縄・浦添）" />
   <meta property="og:description"
@@ -53,10 +42,7 @@
     content="沖縄・浦添で40代から安心して参加できる結婚相談・お見合いサロン。少人数制の婚活パーティーも開催。" />
   <meta name="twitter:image" content="https://www.fine-okinawa.com/ogp.png" />
 
-  <!-- =========================
-       スキーマ（構造化データ）
-       ※ Googleが「結婚相談所である」と理解する
-  ========================== -->
+  <!-- スキーマ（構造化データ） -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,130 +62,471 @@
 }
 </script>
 
-
-  <!-- =========================
-       Fonts & STYLE
-  ========================== -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/style.css" />
 
-  <!-- =========================
-       microCMS Key（暫定）
-  ========================== -->
+  <!-- ✅ Tailwind 出力CSS（ここだけ読み込む：style.css は空でOK） -->
+  <link rel="stylesheet" href="/src/tailwind.css" />
+
+  <!-- microCMS Key（暫定） -->
   <script>
     window.MICROCMS_KEY = "CTTGWdKsv8X9lGUGSTgzzoDY8L9CFE5Yd0QM";
   </script>
-  <!-- Vercel Analytics -->
-<script defer src="/_vercel/insights/script.js"></script>
-
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
-  <body>
-<h1 class="visually-hidden">
-  沖縄・浦添の40代からの結婚相談所｜お見合い・少人数婚活パーティー｜FINE Okinawa
-</h1>
+<body
+  class="
+    min-h-screen
+    bg-[#faf8f3]
+    text-[#2f2a25]
+    font-['Noto_Sans_JP',system-ui,-apple-system,'Segoe_UI',sans-serif]
+    leading-[1.85]
+    tracking-[.01em]
+    antialiased
+    [text-rendering:optimizeLegibility]
+  "
+>
+<!-- 背景テクスチャ（改良版：白膜を弱めて自然な光に） -->
+<div aria-hidden class="fixed inset-0 -z-10 pointer-events-none">
+  <!-- 左上の光膜（かなり薄める） -->
+  <div class="
+    absolute inset-0
+    opacity-[.55]
+    [background:radial-gradient(900px_480px_at_18%_14%,rgba(165,143,123,0.06),transparent_65%)]
+  "></div>
 
-<style>
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-  }
-</style>
+  <!-- 右上の光膜（色を少し暖かく + 弱め） -->
+  <div class="
+    absolute inset-0
+    opacity-[.50]
+    [background:radial-gradient(900px_480px_at_82%_16%,rgba(216,203,191,0.10),transparent_60%)]
+  "></div>
 
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <div class="brand">
-          <div class="logo">FINE</div>
-          <div class="tag">Okinawa Marriage & Encounter Salon</div>
+  <!-- 下部の光膜（白過ぎたので 30% に削る） -->
+  <div class="
+    absolute inset-0
+    opacity-[.45]
+    [background:radial-gradient(1100px_680px_at_58%_88%,rgba(165,143,123,0.05),transparent_65%)]
+  "></div>
+</div>
+
+  <h1 class="sr-only">
+    沖縄・浦添の40代からの結婚相談所｜お見合い・少人数婚活パーティー｜FINE Okinawa
+  </h1>
+
+  <!-- HEADER -->
+  <header
+    class="
+      sticky top-0 z-50
+      border-b border-[rgba(47,42,37,0.08)]
+      bg-[rgba(250,248,243,0.74)]
+      backdrop-blur-[8px]
+    "
+  >
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))] h-[72px] flex items-center justify-between gap-[18px]">
+      <div class="flex flex-col gap-[2px]">
+        <div class="font-['Shippori_Mincho_B1',serif] tracking-[.18em] text-[18px] leading-none text-[rgba(47,42,37,0.92)]">
+          FINE
         </div>
-
-        <!-- ハンバーガー制御 -->
-        <input type="checkbox" id="menuToggle" class="menu-toggle">
-
-        <label for="menuToggle" class="menu-btn" aria-label="メニューを開閉">
-          <span></span><span></span><span></span>
-        </label>
-
-        <nav class="main-nav" aria-label="メインナビゲーション">
-          <a href="#service" onclick="document.getElementById('menuToggle').checked=false">サービス</a>
-          <a href="#events" onclick="document.getElementById('menuToggle').checked=false">パーティー</a>
-          <a href="#story" onclick="document.getElementById('menuToggle').checked=false">理念</a>
-          <a href="#contact" onclick="document.getElementById('menuToggle').checked=false">相談予約</a>
-        </nav>
-
-        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div>
+        <div class="text-[12px] tracking-[.12em] text-[rgba(47,42,37,0.55)]">
+          Okinawa Marriage &amp; Encounter Salon
+        </div>
       </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <img
-        src="image/hero_okinawa.jpg"
-        class="bg"
-        alt="沖縄の海辺のカフェで穏やかに語り合う40代・50代の男女"
-        width="1600"
-        height="900"
-        decoding="async"
-        loading="eager"
+      <!-- checkbox: peer -->
+      <input type="checkbox" id="menuToggle" class="peer hidden" />
+
+      <!-- hamburger -->
+      <label
+        for="menuToggle"
+        aria-label="メニューを開閉"
+        class="
+          lg:hidden
+          w-[44px] h-[44px]
+          rounded-full
+          border border-[rgba(47,42,37,0.10)]
+          bg-[rgba(255,255,255,0.42)]
+          backdrop-blur-[8px]
+          flex flex-col items-center justify-center gap-[5px]
+          cursor-pointer
+        "
       >
-      <div class="hero-inner">
-        <span class="hero-badge">沖縄の光と風に包まれて</span>
-        <h1>もう一度、人を好きになる場所。</h1>
-        <p class="lead">
-          FINE Okinawaは、沖縄・浦添にある40代からの大人のための出会いサロン。<br>
-          結婚相談・お見合い・少人数制の婚活パーティーを通して、<br>
-          落ち着いた空間で、あなたの新しいご縁をつなぎます。
-        </p>
+        <span class="block w-[18px] h-[1px] bg-[rgba(47,42,37,0.72)]"></span>
+        <span class="block w-[18px] h-[1px] bg-[rgba(47,42,37,0.72)]"></span>
+        <span class="block w-[18px] h-[1px] bg-[rgba(47,42,37,0.72)]"></span>
+      </label>
 
-        <div class="hero-cta">
-          <a href="#contact" class="btn primary">無料カウンセリングを予約</a>
-          <a href="#events" class="btn">次回パーティーを見る</a>
+      <!-- nav (desktop) -->
+      <nav aria-label="メインナビゲーション" class="hidden lg:flex items-center gap-[18px]">
+        <a href="#service"
+          class="
+            relative
+            text-[13px] tracking-[.12em]
+            text-[rgba(47,42,37,0.72)]
+            px-[6px] py-[10px]
+            transition hover:text-[rgba(47,42,37,0.92)]
+            after:content-['']
+            after:absolute after:left-[8px] after:right-[8px] after:bottom-[6px]
+            after:h-[1px] after:bg-[rgba(165,143,123,0.38)]
+            after:scale-x-0 after:origin-left
+            after:transition-transform after:duration-[350ms] after:ease-[ease]
+            hover:after:scale-x-100
+          "
+        >サービス</a>
+
+        <a href="#events"
+          class="
+            relative
+            text-[13px] tracking-[.12em]
+            text-[rgba(47,42,37,0.72)]
+            px-[6px] py-[10px]
+            transition hover:text-[rgba(47,42,37,0.92)]
+            after:content-['']
+            after:absolute after:left-[8px] after:right-[8px] after:bottom-[6px]
+            after:h-[1px] after:bg-[rgba(165,143,123,0.38)]
+            after:scale-x-0 after:origin-left
+            after:transition-transform after:duration-[350ms] after:ease-[ease]
+            hover:after:scale-x-100
+          "
+        >パーティー</a>
+
+        <a href="#story"
+          class="
+            relative
+            text-[13px] tracking-[.12em]
+            text-[rgba(47,42,37,0.72)]
+            px-[6px] py-[10px]
+            transition hover:text-[rgba(47,42,37,0.92)]
+            after:content-['']
+            after:absolute after:left-[8px] after:right-[8px] after:bottom-[6px]
+            after:h-[1px] after:bg-[rgba(165,143,123,0.38)]
+            after:scale-x-0 after:origin-left
+            after:transition-transform after:duration-[350ms] after:ease-[ease]
+            hover:after:scale-x-100
+          "
+        >理念</a>
+
+        <a href="#contact"
+          class="
+            relative
+            text-[13px] tracking-[.12em]
+            text-[rgba(47,42,37,0.72)]
+            px-[6px] py-[10px]
+            transition hover:text-[rgba(47,42,37,0.92)]
+            after:content-['']
+            after:absolute after:left-[8px] after:right-[8px] after:bottom-[6px]
+            after:h-[1px] after:bg-[rgba(165,143,123,0.38)]
+            after:scale-x-0 after:origin-left
+            after:transition-transform after:duration-[350ms] after:ease-[ease]
+            hover:after:scale-x-100
+          "
+        >相談予約</a>
+      </nav>
+
+      <!-- nav (mobile: peer-checked) -->
+      <nav
+        aria-label="メインナビゲーション（モバイル）"
+        class="
+          hidden peer-checked:flex lg:hidden
+          fixed right-[16px] top-[80px]
+          w-[min(320px,calc(100%-32px))]
+          flex-col
+          p-[10px]
+          gap-0
+          rounded-[20px]
+          border border-[rgba(47,42,37,0.12)]
+          bg-[rgba(255,255,255,0.74)]
+          backdrop-blur-[10px]
+          shadow-[0_26px_70px_rgba(20,16,12,0.10)]
+          z-[60]
+        "
+      >
+        <a href="#service" onclick="document.getElementById('menuToggle').checked=false"
+          class="px-[14px] py-[14px] rounded-[14px] text-[13px] tracking-[.12em] text-[rgba(47,42,37,0.72)] hover:bg-[rgba(165,143,123,0.10)]">
+          サービス
+        </a>
+        <a href="#events" onclick="document.getElementById('menuToggle').checked=false"
+          class="px-[14px] py-[14px] rounded-[14px] text-[13px] tracking-[.12em] text-[rgba(47,42,37,0.72)] hover:bg-[rgba(165,143,123,0.10)]">
+          パーティー
+        </a>
+        <a href="#story" onclick="document.getElementById('menuToggle').checked=false"
+          class="px-[14px] py-[14px] rounded-[14px] text-[13px] tracking-[.12em] text-[rgba(47,42,37,0.72)] hover:bg-[rgba(165,143,123,0.10)]">
+          理念
+        </a>
+        <a href="#contact" onclick="document.getElementById('menuToggle').checked=false"
+          class="px-[14px] py-[14px] rounded-[14px] text-[13px] tracking-[.12em] text-[rgba(47,42,37,0.72)] hover:bg-[rgba(165,143,123,0.10)]">
+          相談予約
+        </a>
+      </nav>
+
+      <!-- overlay (mobile) -->
+      <div
+        onclick="document.getElementById('menuToggle').checked=false"
+        class="
+          hidden peer-checked:block lg:hidden
+          fixed inset-x-0 top-[68px] bottom-0
+          bg-[rgba(20,16,12,0.35)]
+          backdrop-blur-[2px]
+          z-40
+        "
+      ></div>
+    </div>
+  </header>
+
+<!-- HERO -->
+<section
+  id="top"
+  class="
+    relative overflow-hidden
+    min-h-[calc(100vh-72px)]
+    border-b border-[rgba(47,42,37,0.08)]
+    flex items-start justify-start
+    py-[clamp(56px,7vw,92px)]
+  "
+>
+  <!-- bg -->
+  <img
+    src="image/hero_okinawa.jpg"
+    class="absolute inset-0 w-full h-full object-cover [filter:saturate(0.95)_contrast(0.96)] scale-[1.02]"
+    alt="沖縄の海辺のカフェで穏やかに語り合う40代・50代の男女"
+    width="1600"
+    height="900"
+    decoding="async"
+    loading="eager"
+  />
+
+<!-- overlays（視認性をもう一段改善した最適版） -->
+<div
+  aria-hidden
+  class="
+    absolute inset-0 z-[1] pointer-events-none
+
+    before:content-[''] before:absolute before:inset-0
+    before:[background:linear-gradient(
+      to_bottom,
+      rgba(250,248,243,0.12),
+      rgba(250,248,243,0.26)_58%,
+      rgba(250,248,243,0.36)
+    )]
+
+    after:content-[''] after:absolute after:inset-0 after:opacity-[.28]
+    after:[background:
+      radial-gradient(900px_560px_at_22%_35%,rgba(255,255,255,0.15),transparent_70%),
+      radial-gradient(900px_560px_at_78%_30%,rgba(255,255,255,0.12),transparent_72%)
+    ]
+  "
+></div>
+
+  <!-- inner -->
+  <div class="relative z-[2] mx-auto w-[min(1100px,calc(100%-40px))]">
+    <div
+      class="
+        max-w-[480px]
+        pt-[clamp(24px,4vw,40px)]
+        ml-[clamp(22px,20vw,-30px)]  
+      "
+    >
+
+      <!-- pill -->
+      <span
+        class="
+          inline-flex items-center gap-[10px]
+          px-[16px] py-[10px]
+          rounded-full
+          border border-[rgba(255,255,255,0.24)]
+          bg-[rgba(255,255,255,0.36)]
+          backdrop-blur-[7px]
+          text-[12px] tracking-[.12em]
+          text-white
+          [text-shadow:0_4px_18px_rgba(0,0,0,0.38)]
+        "
+      >
+        沖縄の光と風に包まれて
+      </span>
+
+      <!-- title -->
+      <h2
+        class="
+          mt-[18px] mb-[10px]
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(30px,4.2vw,44px)]
+          tracking-[.06em]
+          leading-[1.25]
+          text-white
+          [text-shadow:0_4px_18px_rgba(0,0,0,0.38)]
+        "
+      >
+        もう一度、人を<br>好きになる場所。
+      </h2>
+
+      <!-- text -->
+      <p
+        class="
+          m-0
+          text-[clamp(14px,1.3vw,16px)]
+          text-white
+          opacity-[.96]
+          leading-[1.65]
+          [text-shadow:0_4px_18px_rgba(0,0,0,0.38)]
+        "
+      ><br>
+        FINE Okinawaは、沖縄・浦添にある<br>40代からの大人のための出会いサロン。<br><br>
+        結婚相談・お見合い・少人数制の婚活パーティーを通して、<br>
+        落ち着いた空間で、あなたの新しいご縁をつなぎます。<br>
+      </p>
+<br>
+      <!-- CTA -->
+      <div class="mt-[22px] flex flex-wrap gap-[12px]">
+          <a
+            href="#contact"
+            class="
+              inline-flex items-center justify-center gap-[10px]
+              px-[18px] py-[12px]
+              rounded-full
+              text-[13px] tracking-[.08em]
+              shadow-[0_18px_46px_rgba(20,16,12,0.18)]
+              border border-[rgba(165,143,123,0.56)]
+              bg-[linear-gradient(180deg,rgba(165,143,123,0.94),rgba(138,115,97,0.96))]
+              text-[rgba(255,255,255,0.96)]
+              transition hover:opacity-[.96]
+              motion-reduce:transition-none
+            "
+          >
+            無料カウンセリングを予約
+          </a>
+
+          <a
+            href="#events"
+            class="
+              inline-flex items-center justify-center gap-[10px]
+              px-[18px] py-[12px]
+              rounded-full
+              text-[13px] tracking-[.08em]
+              border border-[rgba(47,42,37,0.16)]
+              bg-[rgba(255,255,255,0.52)]
+              backdrop-blur-[8px]
+              text-[rgba(47,42,37,0.84)]
+              shadow-[0_10px_28px_rgba(20,16,12,0.10)]
+              transition
+              hover:-translate-y-[1px]
+              hover:border-[rgba(165,143,123,0.34)]
+              hover:shadow-[0_14px_34px_rgba(20,16,12,0.12)]
+              motion-reduce:transition-none motion-reduce:transform-none
+            "
+          >
+            次回パーティーを見る
+          </a>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- SERVICE -->
+  <section id="service" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
+        "
+      >
+        FINEのサービス
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-[16px]" aria-label="サービス内容一覧">
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">
+            1対1のご紹介（お見合い）
+          </h3>
+          <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            年代やお人柄、ご希望のイメージを丁寧にお伺いしながら、落ち着いた環境でお相手をご紹介します。<br>
+            プロフィールだけでは分からない「雰囲気」や「大切にしたい価値観」も大事にしています。
+          </p>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">
+            少人数制の婚活パーティー
+          </h3>
+          <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            40代〜70代の方が参加しやすい、ゆったりとした少人数のパーティーを開催しています。<br>
+            前回・前々回はいずれも 8対8 前後で、「一人ひとりと落ち着いて話せた」と好評です。
+          </p>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">
+            アフターサポート
+          </h3>
+          <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            出会いのあとの不安や迷いも、経験豊富なスタッフがしっかりサポート。<br>
+            交際の進め方やお返事の仕方など、ひとつひとつ一緒に考えながら、安心して前に進めるよう寄り添います。
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SERVICE -->
-    <section id="service">
-      <div class="wrap">
-        <h2 class="section-title">FINEのサービス</h2>
-
-        <div class="value-grid" aria-label="サービス内容一覧">
-
-          <div class="card fade-up">
-            <h3>1対1のご紹介（お見合い）</h3>
-            <p>
-              年代やお人柄、ご希望のイメージを丁寧にお伺いしながら、落ち着いた環境でお相手をご紹介します。<br>
-              プロフィールだけでは分からない「雰囲気」や「大切にしたい価値観」も大事にしています。
-            </p>
-          </div>
-
-          <div class="card fade-up">
-            <h3>少人数制の婚活パーティー</h3>
-            <p>
-              40代〜70代の方が参加しやすい、ゆったりとした少人数のパーティーを開催しています。<br>
-              前回・前々回はいずれも 8対8 前後で、「一人ひとりと落ち着いて話せた」と好評です。
-            </p>
-          </div>
-
-          <div class="card fade-up">
-            <h3>アフターサポート</h3>
-            <p>
-              出会いのあとの不安や迷いも、経験豊富なスタッフがしっかりサポート。<br>
-              交際の進め方やお返事の仕方など、ひとつひとつ一緒に考えながら、安心して前に進めるよう寄り添います。
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 🎉 パーティー写真（添える感じ） -->
-    <section class="section-photo party-photo" aria-label="婚活パーティーの雰囲気">
+  <!-- PARTY PHOTO -->
+  <section class="pb-[clamp(56px,6.5vw,86px)]">
+    <div
+      class="
+        mx-auto w-[min(1100px,calc(100%-40px))]
+        rounded-[26px] overflow-hidden
+        shadow-[0_26px_70px_rgba(20,16,12,0.10)]
+        border border-[rgba(47,42,37,0.10)]
+        bg-[rgba(255,255,255,0.30)]
+      "
+    >
       <img
         src="image/photo_party.png"
         alt="沖縄の海辺カフェで談笑する40〜60代の男女の婚活パーティーの様子"
@@ -207,29 +534,77 @@
         height="800"
         loading="lazy"
         decoding="async"
+        class="[filter:saturate(0.96)_contrast(0.98)] scale-[1.01]"
+      />
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
+        "
       >
-    </section>
+        次回パーティーのご案内
+      </h2>
+<div
+  id="eventGrid"
+  aria-live="polite"
+  class="
+    rounded-[16px]
+    border border-dashed border-[rgba(47,42,37,0.16)]
+    bg-[rgba(255,255,255,0.34)]
+    min-h-[70px]
+    flex items-center justify-center
+    text-[13px] tracking-[.08em]
+    text-[rgba(47,42,37,0.55)]
+    px-[10px] py-[12px]
+  "
+>
+  イベント情報を読み込み中…
+</div>
 
-    <!-- EVENTS -->
-    <section id="events">
-      <div class="wrap">
-        <h2 class="section-title">次回パーティーのご案内</h2>
+<div
+  class="
+    mt-[26px]
+    text-center
+    text-[rgba(47,42,37,0.66)]
+    border border-[rgba(47,42,37,0.10)]
+    bg-[rgba(255,255,255,0.46)]
+    rounded-[16px]
+    px-[12px] py-[14px]
+    backdrop-blur-[8px]
+  "
+>
 
-        <!-- ← microCMS のイベントが挿入される -->
- <div id="eventGrid" aria-live="polite"></div>
-
-
-        <!-- 下部案内 -->
-        <div style="margin-top:40px;text-align:center;color:var(--sub)">
-          <p>参加費｜男性 5,000円 ／ 女性 1,000円（ソフトドリンク付き）</p>
-          <p>開催場所｜浦添ショッピングセンター近く（無料駐車場あり）</p>
-          <p>前回・前々回とも 8対8 前後の少人数で、ゆったりとした雰囲気で開催しています。</p>
-        </div>
+        <p class="m-0">参加費｜男性 5,000円 ／ 女性 1,000円（ソフトドリンク付き）</p>
+        <p class="m-0">開催場所｜浦添ショッピングセンター近く（無料駐車場あり）</p>
+        <p class="m-0">前回・前々回とも 8対8 前後の少人数で、ゆったりとした雰囲気で開催しています。</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 🌅 抽象海 写真 -->
-    <section class="section-photo sea-photo" aria-label="沖縄の夕暮れの海">
+  <!-- SEA PHOTO -->
+  <section class="pb-[clamp(56px,6.5vw,86px)]">
+    <div
+      class="
+        mx-auto w-[min(1200px,calc(100%-40px))]
+        rounded-[26px] overflow-hidden
+        shadow-[0_26px_70px_rgba(20,16,12,0.10)]
+        border border-[rgba(47,42,37,0.10)]
+        bg-[rgba(255,255,255,0.30)]
+      "
+    >
       <img
         src="image/photo_sea.png"
         alt="沖縄の夕暮れの海とやわらかな光の風景"
@@ -237,187 +612,421 @@
         height="600"
         loading="lazy"
         decoding="async"
-      >
-    </section>
+        class="[filter:saturate(0.96)_contrast(0.98)] scale-[1.01]"
+      />
+    </div>
+  </section>
 
-    <!-- STORY -->
-    <section id="story">
-      <div class="wrap">
-        <h2 class="section-title">FINE Okinawaの想い</h2>
-        <div class="card fade-up">
-          <p>
-            FINE Okinawaの原点には、<br>
-            「年齢を重ねても、もう一度人を好きになる喜びを味わってほしい」という想いがあります。<br><br>
-            40代・50代・60代だからこそ分かる、穏やかさや思いやり、言葉の重み。<br>
-            そんな大人の魅力が自然と伝わるよう、人数や空間、会の進め方にも気を配っています。<br><br>
-            沖縄の光のようにあたたかく、海風のように心地よいご縁を。<br>
-            あなたのペースで、一歩ずつ進める場所でありたいと考えています。
+  <!-- STORY -->
+  <section id="story" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
+        "
+      >
+        FINE Okinawaの想い
+      </h2>
+
+      <div
+        class="
+          rounded-[22px]
+          border border-[rgba(47,42,37,0.10)]
+          bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+          backdrop-blur-[8px]
+          shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+          p-[22px] px-[20px]
+          opacity-0 translate-y-[16px]
+          transition-[opacity,transform] duration-[850ms] ease-[ease]
+          will-change-[opacity,transform]
+          js-fade
+        "
+      >
+        <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+          FINE Okinawaの原点には、<br>
+          「年齢を重ねても、もう一度人を好きになる喜びを味わってほしい」という想いがあります。<br><br>
+          40代・50代・60代だからこそ分かる、穏やかさや思いやり、言葉の重み。<br>
+          そんな大人の魅力が自然と伝わるよう、人数や空間、会の進め方にも気を配っています。<br><br>
+          沖縄の光のようにあたたかく、海風のように心地よいご縁を。<br>
+          あなたのペースで、一歩ずつ進める場所でありたいと考えています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICE -->
+  <section id="voice" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
+        "
+      >
+        ご成婚・ご利用者さまの声
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-[16px]">
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          「海辺のパーティーで出会いました。緊張していましたが、少人数だったので無理に話さなくても自然と笑顔になれました。」<br>
+          <small class="block mt-[12px] text-[rgba(47,42,37,0.58)] tracking-[.06em]">— 50代・女性</small>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          「同年代が多く、落ち着いた雰囲気で話せたのがよかったです。スタッフの方が間に入ってくれたので、安心して参加できました。」<br>
+          <small class="block mt-[12px] text-[rgba(47,42,37,0.58)] tracking-[.06em]">— 40代・男性</small>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          「一度は結婚を諦めかけていましたが、『ゆっくりで大丈夫ですよ』と言ってもらえたことで、もう一度前を向けました。」<br>
+          <small class="block mt-[12px] text-[rgba(47,42,37,0.58)] tracking-[.06em]">— 60代・女性</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN -->
+  <section id="plan" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
+        "
+      >
+        料金について
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-[16px]">
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">婚活パーティー参加費</h3>
+          <p class="m-0"><strong>男性：5,000円</strong></p>
+          <p class="m-0"><strong>女性：1,000円</strong></p>
+          <p class="m-0">（ソフトドリンク・フリードリンク付き）</p>
+          <p class="mt-[10px] m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            40代〜70代の方まで、年代別・少人数制で開催しています。<br>
+            「大人数のパーティーは少し苦手」という方にも参加しやすい雰囲気です。
+          </p>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">1対1のご紹介（お見合い）</h3>
+          <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            プロフィールやご希望をもとに、お一人ずつ丁寧にお相手をご紹介します。<br>
+            落ち着いた雰囲気の中で、ゆっくりとお話しいただけます。
+          </p>
+          <p class="mt-[10px] m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            ご希望の方は、まずは無料カウンセリングまたはお電話・Gmailにてお問い合わせください。
+          </p>
+        </div>
+
+        <div
+          class="
+            rounded-[22px]
+            border border-[rgba(47,42,37,0.10)]
+            bg-[linear-gradient(180deg,rgba(255,255,255,0.66),rgba(255,255,255,0.50))]
+            backdrop-blur-[8px]
+            shadow-[0_14px_44px_rgba(20,16,12,0.10)]
+            p-[22px] px-[20px]
+            opacity-0 translate-y-[16px]
+            transition-[opacity,transform] duration-[850ms] ease-[ease]
+            will-change-[opacity,transform]
+            js-fade
+          "
+        >
+          <h3 class="m-0 mb-[10px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)]">ご相談サポート</h3>
+          <p class="m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            「婚活が初めて」「久しぶりの出会いで不安」という方にも、スタッフが丁寧にサポートします。<br>
+            活動のペースやご不安な点など、どんなことでもお気軽にご相談ください。
+          </p>
+          <p class="mt-[10px] m-0 text-[14px] text-[rgba(47,42,37,0.72)]">
+            無理な勧誘は一切行っておりませんので、まずはお話を聞くだけでも大歓迎です。
           </p>
         </div>
       </div>
-    </section>
-
-    <!-- VOICE -->
-    <section id="voice">
-      <div class="wrap">
-        <h2 class="section-title">ご成婚・ご利用者さまの声</h2>
-        <div class="voice-grid">
-
-          <div class="card fade-up">
-            「海辺のパーティーで出会いました。緊張していましたが、少人数だったので無理に話さなくても自然と笑顔になれました。」<br>
-            <small>— 50代・女性</small>
-          </div>
-
-          <div class="card fade-up">
-            「同年代が多く、落ち着いた雰囲気で話せたのがよかったです。スタッフの方が間に入ってくれたので、安心して参加できました。」<br>
-            <small>— 40代・男性</small>
-          </div>
-
-          <div class="card fade-up">
-            「一度は結婚を諦めかけていましたが、『ゆっくりで大丈夫ですよ』と言ってもらえたことで、もう一度前を向けました。」<br>
-            <small>— 60代・女性</small>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PLAN -->
-    <section id="plan">
-      <div class="wrap">
-        <h2 class="section-title">料金について</h2>
-
-        <div class="plan-grid">
-
-          <!-- パーティー参加費 -->
-          <div class="card fade-up">
-            <h3>婚活パーティー参加費</h3>
-            <p><strong>男性：5,000円</strong></p>
-            <p><strong>女性：1,000円</strong></p>
-            <p>（ソフトドリンク・フリードリンク付き）</p>
-            <p>
-              40代〜70代の方まで、年代別・少人数制で開催しています。<br>
-              「大人数のパーティーは少し苦手」という方にも参加しやすい雰囲気です。
-            </p>
-          </div>
-
-          <!-- 1対1紹介 -->
-          <div class="card fade-up">
-            <h3>1対1のご紹介（お見合い）</h3>
-            <p>
-              プロフィールやご希望をもとに、お一人ずつ丁寧にお相手をご紹介します。<br>
-              落ち着いた雰囲気の中で、ゆっくりとお話しいただけます。
-            </p>
-            <p>
-              ご希望の方は、まずは無料カウンセリングまたはお電話・Gmailにてお問い合わせください。
-            </p>
-          </div>
-
-          <!-- 相談・サポート -->
-          <div class="card fade-up">
-            <h3>ご相談サポート</h3>
-            <p>
-              「婚活が初めて」「久しぶりの出会いで不安」という方にも、スタッフが丁寧にサポートします。<br>
-              活動のペースやご不安な点など、どんなことでもお気軽にご相談ください。
-            </p>
-            <p>
-              無理な勧誘は一切行っておりませんので、まずはお話を聞くだけでも大歓迎です。
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-<!-- CONTACT -->
-<section id="contact" class="contact fade-up">
-  <div class="wrap">
-    <h2 class="section-title">まずはお気軽にご相談ください</h2>
-    <p style="text-align:center;color:var(--sub);margin-bottom:2rem;font-size:1.05rem">
-      「自分の年齢でも大丈夫かな」「どんな雰囲気の会ですか？」など、<br>
-      小さな不安や疑問でもかまいません。スタッフが丁寧にご案内いたします。
-    </p>
-
-    <div class="contact-card">
-      <h3 class="contact-title">📧 メールで予約する（Gmailが開きます）</h3>
-
-      <!-- 📩 Gmail 起動ボタン（本物のメールアドレス） -->
-      <a
-        href="mailto:ar84zwpzna@gmail.com?subject=【FINE予約希望】&body=お名前：%0D%0A年齢：%0D%0A参加希望日：%0D%0Aご連絡方法（メール／電話／LINE）：%0D%0Aその他："
-        class="btn primary"
-        style="width:100%;justify-content:center;margin-bottom:20px;"
-      >
-        Gmailで応募する
-      </a>
-
-      <div class="contact-divider" style="text-align:center;margin:2rem 0 1.5rem;color:var(--sub);opacity:0.7;font-size:0.95rem;">
-        または
-      </div>
-
-      <div class="contact-links" style="text-align:center;">
-        <p style="margin-bottom:.6rem;color:var(--sub);font-weight:500;">お電話・LINEでもご相談いただけます。</p>
-
-        <!-- 📞 本物の電話番号 -->
-        <a href="tel:07054114864" class="btn">📞 電話で相談する</a>
-
-        <!-- 💬 LINE（本物のURLがわかれば差し替える） -->
-        <a href="https://line.me/ti/p/Nhemm6aBhN"
-           target="_blank"
-           class="btn primary"
-           rel="noopener noreferrer"
-        >💬 LINEで相談する</a>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- EPILOGUE -->
-    <section class="epilogue">
-      <p>出会いは、奇跡ではなく、あなたが選ぶ光の一歩。</p>
-    </section>
-
-    <!-- DESIGN LINK -->
-    <div style="
-      text-align:center;
-      padding: 60px 20px 40px;
-      color: #756e66;
-      font-size: .95rem;
-      opacity: .85;
-      line-height: 1.9;
-    ">
-      <p style="margin:0 0 12px; font-family:'Shippori Mincho B1',serif; letter-spacing:.06em;">
-        本サイトのデザイン・制作
-      </p>
-      <a href="https://gushikendesign.com/" target="_blank" rel="noopener noreferrer"
-        style="
-          display:inline-block;
-          padding:10px 22px;
-          border:1px solid #d8d2c8;
-          border-radius:999px;
-          text-decoration:none;
-          color:#524b44;
-          background:rgba(255,255,255,0.6);
-          backdrop-filter:blur(6px);
-          transition:.25s;
+  <!-- CONTACT -->
+  <section id="contact" class="py-[clamp(56px,6.5vw,88px)]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+      <h2
+        class="
+          mb-[22px]
+          text-center
+          font-['Shippori_Mincho_B1',serif]
+          text-[clamp(20px,2.2vw,26px)]
+          tracking-[.08em]
+          text-[rgba(47,42,37,0.90)]
+          after:content-[''] after:block after:w-[64px] after:h-[1px]
+          after:mx-auto after:mt-[14px]
+          after:bg-[rgba(165,143,123,0.34)]
         "
-        onmouseover="this.style.opacity=0.75"
-        onmouseout="this.style.opacity=1"
       >
-        Gushiken Design（制作相談はこちら）
-      </a>
-    </div>
+        まずはお気軽にご相談ください
+      </h2>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="brand-footer">FINE Okinawa</div>
-    <div class="copyright">
-      © 2025 FINE Okinawa — All Rights Reserved.
+      <p class="text-center text-[15px] text-[rgba(47,42,37,0.68)] m-0 mb-[22px]">
+        「自分の年齢でも大丈夫かな」「どんな雰囲気の会ですか？」など、<br>
+        小さな不安や疑問でもかまいません。スタッフが丁寧にご案内いたします。
+      </p>
+
+<div
+  class="
+    mx-auto w-full max-w-[720px]
+    rounded-[26px]
+    border border-[rgba(47,42,37,0.10)]
+    bg-[linear-gradient(180deg,rgba(255,255,255,0.70),rgba(255,255,255,0.54))]
+    shadow-[0_26px_70px_rgba(20,16,12,0.10)]
+    px-[22px] py-[26px]
+    backdrop-blur-[10px]
+    opacity-0 translate-y-[16px]
+    transition-[opacity,transform] duration-[850ms] ease-[ease]
+    will-change-[opacity,transform]
+    js-fade
+  "
+>
+
+        <h3 class="m-0 mb-[14px] text-[15px] tracking-[.06em] text-[rgba(47,42,37,0.88)] text-center">
+          📧 メールで予約する（Gmailが開きます）
+        </h3>
+<a
+  href="mailto:ar84zwpzna@gmail.com?subject=【FINE予約希望】&body=お名前：%0D%0A年齢：%0D%0A参加希望日：%0D%0Aご連絡方法（メール／電話／LINE）：%0D%0Aその他："
+  class="
+    w-[420px] mx-auto flex     
+    items-center justify-center gap-[8px]
+    px-[14px] py-[10px]
+    rounded-full
+    text-[13px] tracking-[.08em]
+    border border-[rgba(165,143,123,0.42)]
+    bg-[linear-gradient(180deg,rgba(165,143,123,0.88),rgba(138,115,97,0.90))]
+    text-[rgba(255,255,255,0.96)]
+    shadow-[0_10px_28px_rgba(20,16,12,0.12)]
+    transition hover:opacity-[.96]
+  "
+>
+  Gmailで応募する
+</a>
+
+
+        <div class="text-center my-[18px] text-[13px] tracking-[.10em] text-[rgba(47,42,37,0.58)] opacity-[.85]">
+          または
+        </div>
+
+        <div class="text-center">
+          <p class="m-0 mb-[12px] text-[rgba(47,42,37,0.64)] font-medium">
+            お電話・LINEでもご相談いただけます。
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-[12px]">
+            <a
+              href="tel:07054114864"
+              class="
+                inline-flex items-center justify-center gap-[10px]
+                px-[18px] py-[12px]
+                rounded-full
+                text-[13px] tracking-[.08em]
+                border border-[rgba(47,42,37,0.16)]
+                bg-[rgba(255,255,255,0.52)]
+                backdrop-blur-[8px]
+                text-[rgba(47,42,37,0.84)]
+                shadow-[0_10px_28px_rgba(20,16,12,0.10)]
+                transition
+                hover:-translate-y-[1px]
+                hover:border-[rgba(165,143,123,0.34)]
+                hover:shadow-[0_14px_34px_rgba(20,16,12,0.12)]
+              "
+            >
+              📞 電話で相談する
+            </a>
+
+            <a
+              href="https://line.me/ti/p/Nhemm6aBhN"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="
+                inline-flex items-center justify-center gap-[10px]
+                px-[18px] py-[12px]
+                rounded-full
+                text-[13px] tracking-[.08em]
+                shadow-[0_18px_46px_rgba(20,16,12,0.18)]
+                border border-[rgba(165,143,123,0.56)]
+                bg-[linear-gradient(180deg,rgba(165,143,123,0.94),rgba(138,115,97,0.96))]
+                text-[rgba(255,255,255,0.96)]
+                transition hover:opacity-[.96]
+              "
+            >
+              💬 LINEで相談する
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- EPILOGUE -->
+  <section
+    class="
+      pt-[62px] pb-[46px]
+      text-center
+      font-['Shippori_Mincho_B1',serif]
+      tracking-[.08em]
+      text-[rgba(47,42,37,0.70)]
+      before:content-[''] before:block before:w-[90px] before:h-[1px]
+      before:mx-auto before:mb-[20px]
+      before:bg-[rgba(165,143,123,0.28)]
+    "
+  >
+    <p class="m-0">出会いは、奇跡ではなく、あなたが選ぶ光の一歩。</p>
+  </section>
+
+  <!-- DESIGN LINK -->
+  <div class="text-center px-[20px] pt-[56px] pb-[36px] text-[rgba(47,42,37,0.62)] leading-[1.9]">
+    <p class="m-0 mb-[12px] font-['Shippori_Mincho_B1',serif] tracking-[.08em]">本サイトのデザイン・制作</p>
+
+    <a
+      href="https://gushikendesign.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="
+        inline-block
+        px-[22px] py-[10px]
+        rounded-full
+        border border-[rgba(47,42,37,0.14)]
+        bg-[rgba(255,255,255,0.52)]
+        backdrop-blur-[10px]
+        shadow-[0_14px_34px_rgba(20,16,12,0.10)]
+        transition
+        hover:opacity-[.88]
+        hover:-translate-y-[1px]
+        motion-reduce:transition-none motion-reduce:transform-none
+      "
+    >
+      Gushiken Design（制作相談はこちら）
+    </a>
   </div>
-</footer>
 
-    <!-- =========================
-         MAIN JS（microCMS / フェードなど）
-    ========================== -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <!-- FOOTER -->
+  <footer class="border-t border-[rgba(47,42,37,0.10)] bg-[rgba(255,255,255,0.30)] backdrop-blur-[8px] pt-[34px] pb-[44px]">
+    <div class="mx-auto w-[min(1100px,calc(100%-40px))] flex items-center justify-between gap-[16px] flex-wrap">
+      <div class="font-['Shippori_Mincho_B1',serif] tracking-[.14em] text-[rgba(47,42,37,0.84)]">
+        FINE Okinawa
+      </div>
+      <div class="text-[12px] tracking-[.06em] text-[rgba(47,42,37,0.58)]">
+        © 2025 FINE Okinawa — All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- fade-up（TailwindクラスだけでON/OFF） -->
+  <script>
+    (function () {
+      const targets = document.querySelectorAll(".js-fade");
+      if (!targets.length) return;
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.classList.add("opacity-100", "translate-y-0");
+            e.target.classList.remove("opacity-0", "translate-y-[16px]");
+            io.unobserve(e.target);
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      targets.forEach((el) => io.observe(el));
+    })();
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
